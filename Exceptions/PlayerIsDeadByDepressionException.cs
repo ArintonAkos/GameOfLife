@@ -8,7 +8,7 @@ namespace CircularListExample.Exceptions
 {
     internal class PlayerIsDeadByDepressionException : EndOfGameException
     {
-        public PlayerIsDeadByDepressionException() : base("A jatekos sajnos szomorusagaban eletet vesztette.")
+        public PlayerIsDeadByDepressionException() : base("A jatekos sajnos szomorusagaban eletet vesztette.  :(")
         {
         }
     }

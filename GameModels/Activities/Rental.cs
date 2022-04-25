@@ -24,7 +24,7 @@ namespace CircularListExample.GameModels.Activities
             {
                 int income = _activitySettings.Data.Money * Count;
 
-                Console.WriteLine("{0} bevetelt szereztel {1}", income, Count);
+                Console.WriteLine("{0} bevetelt szereztel {1} db ingatlanbol!", income, Count);
             }
         }
 

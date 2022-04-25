@@ -8,23 +8,22 @@ namespace CircularListExample.GameModels.PlayerData
 {
    public class SettingsDataModel
     {
-        public virtual int Health { get; set; }
-        public virtual int Happiness { get; set; }
-        public virtual int Tiredness { get; set; }
-        public virtual int Money { get; set; }
-        public virtual int Hunger { get; set; }
+        public int Health { get; set; }
+        public int Happiness { get; set; }
+        public int Tiredness { get; set; }
+        public int Money { get; set; }
+        public int Hunger { get; set; }
     }
 
     public class DefaultSettingsDataModel : SettingsDataModel
     {
-        public override int Health => 90;
-
-        public override int Happiness => 75;
-
-        public override int Tiredness => 10;
-
-        public override int Money => 500;
-
-        public override int Hunger => 10;
+        public DefaultSettingsDataModel()
+        {
+            Health = 90;
+            Happiness = 75;
+            Tiredness = 10;
+            Money = 500;
+            Hunger = 10;
+        }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using CircularListExample.Exceptions;
+using CircularListExample.Exceptions.Store;
+using CircularListExample.GameModels.Activities;
 using CircularListExample.GameModels.Activities.Store;
 using CircularListExample.GameModels.Days;
 using CircularListExample.GameModels.PlayerData;
@@ -8,7 +10,7 @@ namespace CircularListExample.GameEngines
 {
     internal class Game
     {
-        private static readonly CircularList<Day> days = new(new Day[] { 
+        private readonly CircularList<Day> days = new(new Day[] { 
             new Monday(),
             new Tuesday(),
             new Wednesday(),
@@ -17,13 +19,19 @@ namespace CircularListExample.GameEngines
             new Saturday(),
             new Sunday(),
         });
-        private Day currentDay = days.Next();
+        private Day currentDay;
         private readonly Player player;
-        private readonly Store store = new();
+        private readonly Store store;
+        private readonly Sleep sleepActivity;
+        private int livedDays;
 
         public Game(string playerName)
         {
             player = new(playerName);
+            currentDay = days.Next();
+            livedDays = 0;
+            store = new();
+            sleepActivity = new();
         }
 
         public void StartGame(ref bool exitGame, ref bool restartGame)
@@ -31,7 +39,7 @@ namespace CircularListExample.GameEngines
             restartGame = false;
             exitGame = false;
 
-            Console.WriteLine(string.Format("Udvozollek a jatekban {0}!", player.Name));
+            Console.WriteLine(string.Format("\nUdvozollek a jatekban {0}!", player.Name));
 
             GameInputLooper(ref exitGame, ref restartGame);
 
@@ -41,15 +49,20 @@ namespace CircularListExample.GameEngines
             }
         }
 
+        private void Print()
+        {
+            player.PrintInfo();
+            currentDay.PrintPlayableActivities();
+        }
+
         private void GameInputLooper(ref bool exitGame, ref bool restartGame)
         {
+            currentDay.PrintName();
+            Print();
+
             while (!exitGame)
             {
-                player.PrintInfo();
-                player.settings.PrintUserData();
-                currentDay.PrintPlayableActivities();
-
-                Console.WriteLine("Adj meg egy parancsot: ");
+                Console.Write("Adj meg egy parancsot: ");
                 string? command = Console.ReadLine();
                 switch (command)
                 {
@@ -60,22 +73,41 @@ namespace CircularListExample.GameEngines
                         restartGame = false;
                         exitGame = true;
                         break;
-                    case "sleep":
-                        currentDay = days.Next();
-                        store.GetOvernightIncome(player);
-                        break;
                     case "store":
                         store.PrintStoreProperties();
-                        store.HandleUserInput(command, days, player);
+                        store.HandleUserInput(days, player);
+                        break;
+                    case "help":
+                        currentDay.PrintPlayableActivities();
+                        break;
+                    case "info":
+                        player.PrintInfo();
                         break;
                     default:
                         try
                         {
-                            currentDay.HandleUserInput(command, player);
+                            if (command == "sleep")
+                            {
+                                livedDays++;
+                                sleepActivity.DoActivity(player);
+                                currentDay = days.Next();
+                                currentDay.PrintName();
+                                store.GetOvernightIncome(player);
+                                Print();
+                            }
+                            else
+                            {
+                                currentDay.HandleUserInput(command, player);
+                            }
+                        }
+                        catch (NotEnoughMoneyException e)
+                        {
+                            Console.WriteLine(e.Message);
                         }
                         catch (EndOfGameException eoge)
                         {
                             Console.WriteLine(eoge.Message);
+                            Console.WriteLine("Tulelt napok szama: {0}", livedDays);
                             GetPlayerChoiceOnGameEnd(ref exitGame, ref restartGame);
                         }
                         catch (Exception)
@@ -108,11 +140,13 @@ namespace CircularListExample.GameEngines
         {
             string? command = Console.ReadLine();
 
-            while (command != "exit" || command != "restart")
+            while (command != "exit" && command != "restart")
             {
                 Console.WriteLine("Kerlek helyes parancsot irj be!");
                 Console.WriteLine("exit -> kilepes");
                 Console.WriteLine("restart -> ujrakezdes");
+                
+                command = Console.ReadLine();
             }
 
             return command;

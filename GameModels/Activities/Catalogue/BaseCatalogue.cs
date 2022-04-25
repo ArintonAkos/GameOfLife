@@ -38,6 +38,7 @@ namespace CircularListExample.GameModels.Activities.Catalogue
         public abstract int GetCount();
         public abstract DailyActivity? GetDailyActivity();
         public abstract void Print();
+        public abstract void PrintCount();
         public abstract string GetKey();
 
         public void DoActivity(CircularList<Day> days, Player player)

@@ -6,5 +6,6 @@ namespace CircularListExample.GameModels.Activities
     {
         public void Print();
         public void DoActivity(Player player);
+        public void CompletedTaskMessage(ActivityOutcome? outcome);
     }
 }

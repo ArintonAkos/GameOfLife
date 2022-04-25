@@ -1,12 +1,15 @@
 ﻿using CircularListExample.GameModels.Activities;
-using CircularListExample.GameModels.PlayerData;
-using DataStructures;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace CircularListExample.GameModels.Days
 {
-    class Monday : Day
+    internal class Wednesday : Day
     {
-        public Monday()
+        public Wednesday()
         {
             activityGroups.Add(new ActivityGroup
             {
@@ -15,11 +18,11 @@ namespace CircularListExample.GameModels.Days
             });
         }
 
+        public override string GetKey() => "wednesday";
+
         public override void PrintName()
         {
-            Console.WriteLine("A mai nap: Hetfo");
+            Console.WriteLine("A mai nap: Szerda");
         }
-
-        public override string GetKey() => "monday";
     }
 }

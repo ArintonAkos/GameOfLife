@@ -22,6 +22,7 @@ namespace CircularListExample.GameModels.Activities.Store
             catalogues.ForEach(catalogue =>
             {
                 catalogue.Print();
+                catalogue.PrintCount();
             });
         }
 
@@ -34,16 +35,23 @@ namespace CircularListExample.GameModels.Activities.Store
                 if (activity != null)
                 {
                     activity.DoActivity(player);
+                    activity.Print();
                 }
             });
-
-            player.PrintInfo();
         }
 
-        public void HandleUserInput(string command, CircularList<Day> days, Player player)
+        public void HandleUserInput(CircularList<Day> days, Player player)
         {
             try
             {
+                Console.Write("(Store) -> Irj be egy parancsot: ");
+                string? command = Console.ReadLine();
+
+                if (command == null)
+                {
+                    throw new Exception();
+                }
+
                 BaseCatalogue catalogue = catalogues.FindWhere(catalogue =>
                 {
                     return (catalogue.GetKey() == command);

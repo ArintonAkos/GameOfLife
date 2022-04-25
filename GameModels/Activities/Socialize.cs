@@ -1,21 +1,26 @@
 ﻿using CircularListExample.GameModels.PlayerData;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace CircularListExample.GameModels.Activities
 {
-    class Work : IActivity
+    class Socialize : IActivity
     {
         private readonly Settings _activitySettings = new(new SettingsDataModel
         {
-            Tiredness = 30,
-            Happiness = -25,
-            Money = 250,
-            Hunger = 30,
-            Health = -5
+            Tiredness = 15,
+            Happiness = 40,
+            Money = -150,
+            Hunger = 15,
+            Health = 5,
         });
 
         public void CompletedTaskMessage(ActivityOutcome? outcome)
         {
-            Console.WriteLine("Sikeresen elmentel dolgozni!");
+            Console.WriteLine("Sikeresen talalkoztal a barataiddal!");
         }
 
         public void DoActivity(Player player)
@@ -26,7 +31,7 @@ namespace CircularListExample.GameModels.Activities
 
         public void Print()
         {
-            Console.WriteLine("Munka: work (Penzt szerezhetsz vele, de ehesebb leszel es szomorubb)");
+            Console.WriteLine("Szocializalas: socialize (Boldogabbak, faradtabbak, ehesebbek es egeszsegebbek leszunk. Penzbe kerul)");
         }
     }
 }

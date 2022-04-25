@@ -8,7 +8,7 @@ namespace CircularListExample.Exceptions.Store
 {
     internal class NotEnoughMoneyException : StoreException
     {
-        public NotEnoughMoneyException() : base("Nem rendelkezel elegendo penzzel!")
+        public NotEnoughMoneyException() : base("Hiba! Nem rendelkezel elegendo penzzel!")
         {
         }
     }

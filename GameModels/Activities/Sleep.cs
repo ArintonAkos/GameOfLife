@@ -7,11 +7,15 @@ namespace CircularListExample.GameModels.Activities
         private readonly Settings _activitySettings = new(new SettingsDataModel
         {
             Tiredness = -50,
-            Happiness = 25,
+            Happiness = 15,
             Money = 0,
-            Hunger = 50,
+            Hunger = 25,
             Health = 0,
         });
+
+        public void CompletedTaskMessage(ActivityOutcome? outcome)
+        {
+        }
 
         public void DoActivity(Player player)
         {
@@ -20,7 +24,7 @@ namespace CircularListExample.GameModels.Activities
 
         public void Print()
         {
-            Console.WriteLine("Alvas: sleep (Faradtsagot enyhithetjuk, de ehesebbek leszunk tole.)");
+            Console.WriteLine("Alvas: sleep (Faradtsagot enyhithetjuk, de ehesebb leszel tole)");
         }
     }
 }

@@ -13,19 +13,25 @@ namespace CircularListExample.GameModels.Activities
         {
             Tiredness = -20,
             Happiness = 40,
-            Money = 100,
-            Hunger = -10,
+            Money = -100,
+            Hunger = -20,
             Health = 0,
         });
+
+        public void CompletedTaskMessage(ActivityOutcome? outcome)
+        {
+            Console.WriteLine("Sikeresen elutaztal!");
+        }
 
         public void DoActivity(Player player)
         {
             player.UpdateSettings(player.settings + _activitySettings);
+            CompletedTaskMessage(null);
         }
 
         public void Print()
         {
-            Console.WriteLine("Utazas: travel (Boldogabbak, kipihentebbek es kevesbe ehesek leszunk, viszont penzbe kerul.)");
+            Console.WriteLine("Utazas: travel (Boldogabb, kipihentebb es kevesbe leszel ehes, viszont penzbe kerul)");
         }
     }
 }

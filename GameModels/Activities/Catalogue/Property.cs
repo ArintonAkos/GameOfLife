@@ -28,7 +28,12 @@ namespace CircularListExample.GameModels.Activities.Catalogue
 
         public override void Print()
         {
-            Console.WriteLine("property: Ingatlan (napi bevetelt kapsz tole)");
+            Console.WriteLine(String.Format("property: Ingatlan (napi bevetelt kapsz tole). Ar: {0}$", Price));
+        }
+
+        public override void PrintCount()
+        {
+            Console.WriteLine(String.Format("\t Jelenleg {0} db ingatlanod van!", Count));
         }
 
         public override DailyActivity? GetDailyActivity()

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CircularListExample.Exceptions
 {
-    internal class PlayerIsDeadByHunger : EndOfGameException
+    internal class PlayerIsDeadByTiredness : EndOfGameException
     {
-        public PlayerIsDeadByHunger() : base("A jatekos sajnos ehseg miatt eletet vesztette.  :(")
+        public PlayerIsDeadByTiredness() : base("A jatekos sajnos faradsag miatt eletet vesztette. :(")
         {
         }
     }

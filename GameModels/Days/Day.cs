@@ -1,4 +1,6 @@
-﻿using CircularListExample.GameModels.Activities;
+﻿using CircularListExample.Exceptions;
+using CircularListExample.Exceptions.Store;
+using CircularListExample.GameModels.Activities;
 using CircularListExample.GameModels.Activities.Catalogue;
 using CircularListExample.GameModels.PlayerData;
 using DataStructures;
@@ -52,12 +54,19 @@ namespace CircularListExample.GameModels.Days
             }
         }
 
+        public abstract void PrintName();
+
         public void PrintPlayableActivities()
         {
+            Console.WriteLine("Alvas: sleep (kipihentebb, boldogabb es ehesebb leszel)");
+            Console.WriteLine("Uzlet: store (dolgokat vasarolhatsz)");
+
             foreach (var activityGroup in activityGroups)
             {
                 activityGroup.Activity.Print();
             };
+            
+            Console.WriteLine();
         }
 
         public virtual void HandleUserInput(string command, Player player)
@@ -70,11 +79,22 @@ namespace CircularListExample.GameModels.Days
                 });
 
                 activityGroup.Activity.DoActivity(player);
+                player.PrintInfo();
+            }
+            catch (NotEnoughMoneyException e)
+            {
+                throw e;
+            }
+            catch (EndOfGameException e)
+            {
+                throw e;
             }
             catch (Exception)
             {
                 Console.WriteLine("Nem talalhato ilyen parancs!");
             };
         }
+
+        public abstract string GetKey();
     }
 }

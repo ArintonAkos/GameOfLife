@@ -16,3 +16,39 @@ C:\Users\arint\Desktop\egyetem\AdatStruktura\CircularListExample\obj\Debug\net6.
 C:\Users\arint\Desktop\egyetem\AdatStruktura\CircularListExample\bin\Debug\net6.0\KorkorosLista.dll
 C:\Users\arint\Desktop\egyetem\AdatStruktura\CircularListExample\bin\Debug\net6.0\KorkorosLista.pdb
 C:\Users\arint\Desktop\egyetem\AdatStruktura\CircularListExample\obj\Debug\net6.0\CircularListExample.csproj.CopyComplete
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\CircularListExample\bin\Debug\net6.0\CircularListExample.exe
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\CircularListExample\bin\Debug\net6.0\CircularListExample.deps.json
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\CircularListExample\bin\Debug\net6.0\CircularListExample.runtimeconfig.json
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\CircularListExample\bin\Debug\net6.0\CircularListExample.dll
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\CircularListExample\bin\Debug\net6.0\ref\CircularListExample.dll
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\CircularListExample\bin\Debug\net6.0\CircularListExample.pdb
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\CircularListExample\bin\Debug\net6.0\KorkorosLista.dll
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\CircularListExample\bin\Debug\net6.0\KorkorosLista.pdb
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\CircularListExample\obj\Debug\net6.0\CircularListExample.csproj.AssemblyReference.cache
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\CircularListExample\obj\Debug\net6.0\CircularListExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\CircularListExample\obj\Debug\net6.0\CircularListExample.AssemblyInfoInputs.cache
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\CircularListExample\obj\Debug\net6.0\CircularListExample.AssemblyInfo.cs
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\CircularListExample\obj\Debug\net6.0\CircularListExample.csproj.CoreCompileInputs.cache
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\CircularListExample\obj\Debug\net6.0\CircularListExample.csproj.CopyComplete
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\CircularListExample\obj\Debug\net6.0\CircularListExample.dll
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\CircularListExample\obj\Debug\net6.0\ref\CircularListExample.dll
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\CircularListExample\obj\Debug\net6.0\CircularListExample.pdb
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\CircularListExample\obj\Debug\net6.0\CircularListExample.genruntimeconfig.cache
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\Arinton_Akos_KorkorosenLancoltListaAAT\Feladat\Implementalt Projekt\CircularListExample\bin\Debug\net6.0\CircularListExample.exe
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\Arinton_Akos_KorkorosenLancoltListaAAT\Feladat\Implementalt Projekt\CircularListExample\bin\Debug\net6.0\CircularListExample.deps.json
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\Arinton_Akos_KorkorosenLancoltListaAAT\Feladat\Implementalt Projekt\CircularListExample\bin\Debug\net6.0\CircularListExample.runtimeconfig.json
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\Arinton_Akos_KorkorosenLancoltListaAAT\Feladat\Implementalt Projekt\CircularListExample\bin\Debug\net6.0\CircularListExample.dll
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\Arinton_Akos_KorkorosenLancoltListaAAT\Feladat\Implementalt Projekt\CircularListExample\bin\Debug\net6.0\ref\CircularListExample.dll
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\Arinton_Akos_KorkorosenLancoltListaAAT\Feladat\Implementalt Projekt\CircularListExample\bin\Debug\net6.0\CircularListExample.pdb
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\Arinton_Akos_KorkorosenLancoltListaAAT\Feladat\Implementalt Projekt\CircularListExample\bin\Debug\net6.0\KorkorosLista.dll
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\Arinton_Akos_KorkorosenLancoltListaAAT\Feladat\Implementalt Projekt\CircularListExample\bin\Debug\net6.0\KorkorosLista.pdb
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\Arinton_Akos_KorkorosenLancoltListaAAT\Feladat\Implementalt Projekt\CircularListExample\obj\Debug\net6.0\CircularListExample.csproj.AssemblyReference.cache
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\Arinton_Akos_KorkorosenLancoltListaAAT\Feladat\Implementalt Projekt\CircularListExample\obj\Debug\net6.0\CircularListExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\Arinton_Akos_KorkorosenLancoltListaAAT\Feladat\Implementalt Projekt\CircularListExample\obj\Debug\net6.0\CircularListExample.AssemblyInfoInputs.cache
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\Arinton_Akos_KorkorosenLancoltListaAAT\Feladat\Implementalt Projekt\CircularListExample\obj\Debug\net6.0\CircularListExample.AssemblyInfo.cs
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\Arinton_Akos_KorkorosenLancoltListaAAT\Feladat\Implementalt Projekt\CircularListExample\obj\Debug\net6.0\CircularListExample.csproj.CoreCompileInputs.cache
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\Arinton_Akos_KorkorosenLancoltListaAAT\Feladat\Implementalt Projekt\CircularListExample\obj\Debug\net6.0\CircularListExample.csproj.CopyComplete
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\Arinton_Akos_KorkorosenLancoltListaAAT\Feladat\Implementalt Projekt\CircularListExample\obj\Debug\net6.0\CircularListExample.dll
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\Arinton_Akos_KorkorosenLancoltListaAAT\Feladat\Implementalt Projekt\CircularListExample\obj\Debug\net6.0\ref\CircularListExample.dll
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\Arinton_Akos_KorkorosenLancoltListaAAT\Feladat\Implementalt Projekt\CircularListExample\obj\Debug\net6.0\CircularListExample.pdb
+C:\Users\arint\Desktop\egyetem\AdatStruktura\DSProjekt\Arinton_Akos_KorkorosenLancoltListaAAT\Feladat\Implementalt Projekt\CircularListExample\obj\Debug\net6.0\CircularListExample.genruntimeconfig.cache

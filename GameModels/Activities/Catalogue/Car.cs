@@ -46,7 +46,19 @@ namespace CircularListExample.GameModels.Activities.Catalogue
 
         public override void Print()
         {
-            Console.WriteLine("car: Auto (tudsz utazni vele, amitol boldogabb leszel es kipihentebb).");
+            Console.WriteLine(String.Format("car: Auto (tudsz utazni vele, amitol boldogabb leszel es kipihentebb). Ar: {0}$", Price));
+        }
+
+        public override void PrintCount()
+        {
+            if (Count == 0)
+            {
+                Console.WriteLine("\t Jelenleg nem rendelkezel autoval!");
+            }
+            else
+            {
+                Console.WriteLine("\t Jelenleg van autod!");
+            }
         }
 
         public override DailyActivity? GetDailyActivity()

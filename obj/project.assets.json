@@ -31,11 +31,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\arint\\Desktop\\egyetem\\AdatStruktura\\CircularListExample\\CircularListExample.csproj",
+      "projectUniqueName": "C:\\Users\\arint\\Desktop\\egyetem\\AdatStruktura\\DSProjekt\\Arinton_Akos_KorkorosenLancoltListaAAT\\Feladat\\Implementalt Projekt\\CircularListExample\\CircularListExample.csproj",
       "projectName": "CircularListExample",
-      "projectPath": "C:\\Users\\arint\\Desktop\\egyetem\\AdatStruktura\\CircularListExample\\CircularListExample.csproj",
+      "projectPath": "C:\\Users\\arint\\Desktop\\egyetem\\AdatStruktura\\DSProjekt\\Arinton_Akos_KorkorosenLancoltListaAAT\\Feladat\\Implementalt Projekt\\CircularListExample\\CircularListExample.csproj",
       "packagesPath": "C:\\Users\\arint\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\arint\\Desktop\\egyetem\\AdatStruktura\\CircularListExample\\obj\\",
+      "outputPath": "C:\\Users\\arint\\Desktop\\egyetem\\AdatStruktura\\DSProjekt\\Arinton_Akos_KorkorosenLancoltListaAAT\\Feladat\\Implementalt Projekt\\CircularListExample\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\arint\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -52,8 +52,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\arint\\Desktop\\egyetem\\AdatStruktura\\KorkorosLista\\DataStructures.csproj": {
-              "projectPath": "C:\\Users\\arint\\Desktop\\egyetem\\AdatStruktura\\KorkorosLista\\DataStructures.csproj"
+            "C:\\Users\\arint\\Desktop\\egyetem\\AdatStruktura\\DSProjekt\\Arinton_Akos_KorkorosenLancoltListaAAT\\Feladat\\Implementalt Projekt\\KorkorosLista\\DataStructures.csproj": {
+              "projectPath": "C:\\Users\\arint\\Desktop\\egyetem\\AdatStruktura\\DSProjekt\\Arinton_Akos_KorkorosenLancoltListaAAT\\Feladat\\Implementalt Projekt\\KorkorosLista\\DataStructures.csproj"
             }
           }
         }

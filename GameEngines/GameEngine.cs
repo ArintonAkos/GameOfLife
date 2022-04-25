@@ -7,7 +7,7 @@
 
         public static void StartEngine()
         {
-            Console.WriteLine("Udvozollek a The Game of Life-ban! Kezdeshez ird be a neved.");
+            Console.Write("Udvozollek a The Game of Life-ban! Kezdeshez ird be a neved: ");
 
             GetUserName();
 
@@ -23,7 +23,7 @@
 
             while (name == null || name.Trim() == String.Empty)
             {
-                Console.WriteLine("Kerlek helyes nevet irj be!");
+                Console.Write("Kerlek helyes nevet irj be! Nev: ");
                 name = Console.ReadLine();
             }
         }

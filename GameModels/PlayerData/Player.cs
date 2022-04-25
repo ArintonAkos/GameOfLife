@@ -24,7 +24,8 @@ namespace CircularListExample.GameModels.PlayerData
 
             CheckSetting<PlayerIsDeadException>(settings.Data.Health);
             CheckSetting<PlayerIsDeadByDepressionException>(settings.Data.Happiness);
-            CheckSetting<PlayerIsDeadByHunger>(settings.Data.Hunger);
+            CheckSetting<PlayerIsDeadByHunger>(Math.Max(0, 100 - settings.Data.Hunger));
+            CheckSetting<PlayerIsDeadByTiredness>(Math.Max(0, 100 - settings.Data.Tiredness));
         }
 
         private void CheckSetting<T>(int settingValue) where T : Exception, new()
